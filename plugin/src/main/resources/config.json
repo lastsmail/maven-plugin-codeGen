@@ -1,0 +1,29 @@
+{
+  "jdbc":{
+      "driverName":"com.mysql.jdbc.Driver",
+      "url":"jdbc:mysql://localhost:3306/test?characterEncoding=UTF-8",
+      "user":"root",
+      "pwd":"root"
+  }
+  ,"codeGen":{
+      "targetPackage":"com.haohe",
+      "modelTemplate":"model.ftl",
+	  "mapperXmlTemplate":"xmlMapper.ftl",
+	  "mapperTemplate":"mapper.ftl",
+	  "pageTemplate":"page.ftl",
+	  "daoTemplate":"dao.ftl",
+	  "serviceTemplate":"service.ftl",
+	  "controllerTemplate":"controller.ftl"
+	  
+  }
+  ,"alias":[
+    {"clsName":"TbSysRole","tableName":"tb_sys_role"},
+    {"clsName":"TbSysMenu","tableName":"tb_sys_menu"},
+    {"clsName":"TbSysMenuBtn","tableName":"tb_sys_menu_btn"},
+    {"clsName":"TbSysRoleRel","tableName":"tb_sys_role_rel"},
+    {"clsName":"TbSysUser","tableName":"tb_sys_user"},
+    {"clsName":"Ho2ndmcontBaseEtl","tableName":"ho2ndmcontbaseetl"}
+  ],
+  "useModelPackage":true,
+  "useLocalTemplate":true
+}
